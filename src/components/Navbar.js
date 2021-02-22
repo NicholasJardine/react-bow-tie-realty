@@ -5,6 +5,8 @@ import {menuData} from '../data/MenuData'
 const Nav = styled.nav`
     height:60px;
     background:red;
+    display:flex;
+    
 `
 const Logo = styled(Link)`
     color:#fff
@@ -18,8 +20,9 @@ const NavMenu = styled.i`
 `
 
 const NavMenuLinks = styled(Link)`
-    
-`
+    color:#fff;   
+`;
+
 const Navbar = () => {
     return (
         <Nav>
@@ -27,12 +30,12 @@ const Navbar = () => {
 
             <MenuBars/>
             <NavMenu>
-                {menuData.map((item, index) => {
+                {menuData.map((item, index) => (
                     <NavMenuLinks to={item.link} key={index}> 
+                    {item.title}
                     </NavMenuLinks>
-                })}
+                ))}
             </NavMenu>
-           <h1>Navbar</h1> 
         </Nav>
     )
 }
