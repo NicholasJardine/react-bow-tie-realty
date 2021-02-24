@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaSlideshare } from 'react-icons/fa'
 import styled from 'styled-components'
 
 const HeroSection = styled.section`
@@ -16,12 +17,41 @@ const HeroWrapper = styled.div`
     overflow:hidden;
     position:relative;
 
+`;
+
+const HeroSlide = styled.div`
+
+`
+
+const HeroSlider = styled.div`
+    
+`
+const HeroImage = styled.img`
+    
+`
+const HeroContent = styled.div`
+    
 `
 const Hero = () => {
     return (
         <HeroSection>
             <HeroWrapper>
-                hows it going
+                {slides.map((slide, index) => {
+                    return(
+
+                        <HeroSlide key={index}>
+
+                            <HeroSlider>
+                                <HeroImage>
+
+                                </HeroImage>
+                                <HeroContent>
+                                    <h1>{slide.title}</h1>
+                                </HeroContent>
+                            </HeroSlider>
+                        </HeroSlide>
+                    )
+                })}
             </HeroWrapper>
         </HeroSection>
     )

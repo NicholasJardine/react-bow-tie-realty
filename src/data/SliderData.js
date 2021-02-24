@@ -1,3 +1,9 @@
+import ImageOne from '../images/flat.jpeg'
+import ImageTwo from '../images/house.jpeg'
+import ImageThree from '../images/dream.jpeg'
+import ImageFour from '../images/bachelor.jpeg'
+
+
 export const SliderData = [
 {title: 'Comfortable apartment in Johannesburg',
 price: 'R750000',
