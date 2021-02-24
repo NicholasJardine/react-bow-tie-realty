@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaSlideshare } from 'react-icons/fa'
 import styled from 'styled-components'
+import { Button } from './Button'
 
 const HeroSection = styled.section`
     height:100vh;
@@ -32,7 +33,7 @@ const HeroImage = styled.img`
 const HeroContent = styled.div`
     
 `
-const Hero = () => {
+const Hero = ({slides}) => {
     return (
         <HeroSection>
             <HeroWrapper>
@@ -47,6 +48,10 @@ const Hero = () => {
                                 </HeroImage>
                                 <HeroContent>
                                     <h1>{slide.title}</h1>
+                                    <p>{slide.price}</p>
+                                    <Button to ={slide.path} primary='true'>
+                                        {slide.label}
+                                    </Button>
                                 </HeroContent>
                             </HeroSlider>
                         </HeroSlide>
