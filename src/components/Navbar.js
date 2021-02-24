@@ -23,7 +23,7 @@ const Logo = styled(Link)`
 
 const MenuBars = styled(FaBars)`
   display:none; 
-  color:red;
+  color:#fff;
   height:32px;
   width:32px;
   cursor:pointer;
