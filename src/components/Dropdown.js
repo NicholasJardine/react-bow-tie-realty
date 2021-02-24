@@ -1,7 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-
-
+import { menuData } from '../data/MenuData'
+import { Button } from './Button'
+import {Link} from 'react-router-dom'
+import {FaTimes} from 'react-icons/fa'
 const DropdownContainer = styled.div`
     position:fixed;
     z-index: 999;
@@ -16,12 +18,33 @@ const DropdownContainer = styled.div`
     opacity: 1;
 `
 
+const Icon = styled.div``
+const CloseIcon = styled(FaTimes)``
+const DropdownMenu = styled.div``
+const DropdownWrapper = styled.div``
+const DropdownLink = styled(Link)``
+const BtnWrap = styled.div``
+
+
 const Dropdown = () => {
     return (
         <DropdownContainer>
             <Icon>
                 <CloseIcon />
             </Icon>
+            <DropdownWrapper>
+                <DropdownMenu>
+                    {menuData.map = (item, index) => {
+                        <DropdownLink to={item.link} key={index}>
+
+                            {item.title}
+                        </DropdownLink>
+                    }}
+                </DropdownMenu>
+                <BtnWrap>
+                    <Button primary='true' round='true' big = 'true' to='/contact' >Contact Us</Button>
+                </BtnWrap>
+            </DropdownWrapper>
         </DropdownContainer>
     )
 }
