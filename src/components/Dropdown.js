@@ -12,10 +12,10 @@ const DropdownContainer = styled.div`
     background: #cd853f;
     display:grid;
     align_items:center;
-    top:0;
+    top: ${({isOpen}) => (isOpen ? '0' : '-100%')};
     left:0;
     transition: 0.3s ease-in-out;
-    opacity: 1;
+    opacity: ${({isOpen}) => (isOpen ? '1' : '0')};
 `
 
 const Icon = styled.div`
@@ -68,10 +68,10 @@ display:flex;
 justify-content: center;`
 
 
-const Dropdown = () => {
+const Dropdown = ({isOpen, toggle}) => {
     return (
-        <DropdownContainer>
-            <Icon>
+        <DropdownContainer isOpen={isOpen} onClick={toggle}>
+            <Icon onClick={toggle}>
                 <CloseIcon />
             </Icon>
             <DropdownWrapper>
