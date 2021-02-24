@@ -4,7 +4,7 @@ import Navbar from './components/Navbar'
 import GlobalStyle from './globalStyles';
 import {SliderData} from './data/SliderData'
 import Dropdown from './components/Dropdown';
-
+import Footer from './components/Footer';
 
 function App() {
 
@@ -19,6 +19,7 @@ function App() {
     <Dropdown isOpen={isOpen} toggle={toggle}/>
     <Navbar toggle={toggle}/>   
     <Hero slides={SliderData} isOpen={isOpen} toggle={toggle}/>
+    <Footer/>
  </>
   );
 }
