@@ -24,6 +24,7 @@ import styled from 'styled-components'
     justify-content: center;
 
 
+
     @media screen and (max-width:820px) {
        padding-top:32px; 
     }
@@ -97,6 +98,10 @@ import styled from 'styled-components'
         font-weight:bold;
     `
 
+    export const FooterMotto = styled.h1`
+        margin-top:56px;
+    `
+
     export const WebsiteRights = styled.small`
     color:#fff;
     margin-bottom:16px;
@@ -125,28 +130,18 @@ import styled from 'styled-components'
                 <FooterWrap>
 
                     <FooterLinksContainer>
-
+                    <FooterMotto>Working Together for Success</FooterMotto>
                         <FooterLinksWrapper>
+  
                             <FooterLinkItems>
                                 <FooterLinkTitle>About Us</FooterLinkTitle>
 
-                                <FooterLink to="/">How it works</FooterLink>
+                                <FooterLink to="/">Offices</FooterLink>
+                                <FooterLink to="/">Vision</FooterLink>
                                 <FooterLink to="/">Testimonials</FooterLink>
-                                <FooterLink to="/">Careers</FooterLink>
-                                <FooterLink to="/">Investors</FooterLink>
-                                <FooterLink to="/">Terms of Service</FooterLink>
                             </FooterLinkItems>
 
 
-                            <FooterLinkItems>
-                                <FooterLinkTitle>Videos</FooterLinkTitle>
-
-                                <FooterLink to="/">Submit Video</FooterLink>
-                                <FooterLink to="/">Ambassadors</FooterLink>
-                                <FooterLink to="/">Agency</FooterLink>
-                                <FooterLink to="/">Influencer</FooterLink>
-                                <FooterLink to="/">Terms of Service</FooterLink>
-                            </FooterLinkItems>
 
 
                             <FooterLinkItems>
@@ -154,8 +149,7 @@ import styled from 'styled-components'
 
                                 <FooterLink to="/">Contact</FooterLink>
                                 <FooterLink to="/">Support</FooterLink>
-                                <FooterLink to="/siginin">Destinations</FooterLink>
-                                <FooterLink to="/siginin">Sponsorships</FooterLink>
+                                <FooterLink to="/siginin">Questions</FooterLink>
                         
                             </FooterLinkItems>
 
@@ -165,7 +159,6 @@ import styled from 'styled-components'
                                 <FooterLink to="/">Instagram</FooterLink>
                                 <FooterLink to="/">Facebook</FooterLink>
                                 <FooterLink to="/">Youtube</FooterLink>
-                                <FooterLink to="/">Twitter</FooterLink>
                     
                             </FooterLinkItems>
 
@@ -174,9 +167,9 @@ import styled from 'styled-components'
                     <SocialMedia>
                         <SocialMediaWrap>
                             <SocialLogo to='/' onClick={toggleHome}>
-                                Golden
+                                Bowtie Realty
                             </SocialLogo>
-                            <WebsiteRights>Golden © 2021 All rights reserved.</WebsiteRights>
+                            <WebsiteRights>Bowtie Realty © 2021 All rights reserved.</WebsiteRights>
                             <SocialIcons>
                                 <SocialIconLink href="/" target="_blank" aria-label="Facebook">
                                     <FaFacebook />
