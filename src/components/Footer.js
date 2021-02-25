@@ -100,6 +100,12 @@ import styled from 'styled-components'
 
     export const FooterMotto = styled.h1`
         margin-top:56px;
+        color: #fff;
+        margin-left:-80px;
+        @media screen and (max-width:768px) {
+            text-align:center;
+            margin:auto;
+        }
     `
 
     export const WebsiteRights = styled.small`
@@ -128,9 +134,10 @@ import styled from 'styled-components'
         return (
             <FooterContainer>
                 <FooterWrap>
+           
 
                     <FooterLinksContainer>
-                    <FooterMotto>Working Together for Success</FooterMotto>
+
                         <FooterLinksWrapper>
   
                             <FooterLinkItems>
@@ -163,7 +170,9 @@ import styled from 'styled-components'
                             </FooterLinkItems>
 
                         </FooterLinksWrapper>
+                        
                     </FooterLinksContainer>
+                    <FooterMotto>Working Together for Success</FooterMotto>
                     <SocialMedia>
                         <SocialMediaWrap>
                             <SocialLogo to='/' onClick={toggleHome}>
