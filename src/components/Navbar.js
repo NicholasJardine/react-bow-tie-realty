@@ -69,7 +69,7 @@ const NavBtn = styled.div`
 const Navbar = ({toggle}) => {
     return (
         <Nav>
-            <Logo to="/">BOWTIE</Logo>
+            <Logo to="/">BOWTIE REALTY</Logo>
 
             <MenuBars onClick={toggle}/>
             <NavMenu>

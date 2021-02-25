@@ -192,9 +192,7 @@ import styled from 'styled-components'
                                     <FaYoutube />
                                 </SocialIconLink>
 
-                                <SocialIconLink href="/" target="_blank" aria-label="Twitter">
-                                    <FaTwitter />
-                                </SocialIconLink>
+        
 
                                 <SocialIconLink href="/" target="_blank" aria-label="Linkedin">
                                     <FaLinkedin />
