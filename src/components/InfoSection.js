@@ -32,6 +32,11 @@ const ColumnLeft = styled.div`
       font-size: clamp(1.5rem, 6vw, 2rem);
 
   }
+
+  @media screen and (max-width:768px) {
+    margin-top:-240px;
+  }
+
 `
 const ColumnRight = styled.div`
 padding: 1rem 2rem;
@@ -43,6 +48,8 @@ padding: 1rem 2rem;
 
   @media screen and (max-width:768px) {
     order: ${({reverse}) => (reverse ? '2' : '1' )};
+    margin-top:-240px;
+
   }
 
   img{
@@ -65,7 +72,9 @@ const InfoSection = ({heading, paragraphOne, paragraphTwo, buttonLabel, reverse,
                 <ColumnLeft>
                 <h1>{heading}</h1>
                 <p>{paragraphOne}</p>
+                <br></br>
                 <p>{paragraphTwo}</p>
+                <br></br>
                 <Button to="/homes"  primary="true">{buttonLabel}</Button>
                 </ColumnLeft>
                 <ColumnRight reverse={reverse}>
