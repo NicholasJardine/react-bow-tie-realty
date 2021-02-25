@@ -1,4 +1,4 @@
-import ImageOne from '../images/flat.jpeg'
+import ImageOne from '../images/bachelor.jpg'
 import ImageTwo from '../images/house.jpeg'
 import ImageThree from '../images/dream.jpeg'
 import ImageFour from '../images/flat.jpg'
